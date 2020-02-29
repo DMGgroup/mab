@@ -21,6 +21,11 @@
 		"gulp-responsive": "^3.0.1",
 		"gulp-rsync": "0.0.8",
 		"gulp-sass": "^4.0.2",
-		"gulp-uglify-es": "^2.0.0"
+		"gulp-uglify-es": "^2.0.0",
+		"jquery": "^3.4.1",
+		"magnific-popup": "^1.1.0"
+	},
+	"dependencies": {
+		"feather-icons": "^4.26.0"
 	}
 }

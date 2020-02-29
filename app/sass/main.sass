@@ -24,13 +24,68 @@ body
 	font-family: 'Roboto', sans-serif
 	overflow-x: hidden
 	color: $text
-
-.col
+.upp
+	text-transform: uppercase
+.tc
 	text-align: center
-	background-color: rgba(gray, .2)
-	.c
-		background-color: rgba(green, .1)
-	&:nth-child(2n)
-		background-color: rgba(gray, .3)
-		.c
-			background-color: rgba(blue, .1)
+.bg-full
+	background-repeat: no-repeat
+	background-size: cover
+.s1
+	position: relative
+	&:before
+		content: ""
+		position: absolute
+		width: 100%
+		height: 100%
+		top: 0
+		left: 0
+		background-color: rgba($primary, .8)
+h1
+	font-weight: bold
+.s2
+	.jumbotron
+		position: relative
+	.sh
+		perspective: 1000px
+		width: 100%
+		height: 75%
+		position: absolute
+		
+	.sh-iner
+		position: absolute
+		width: calc(100% - 50px)
+		height: calc(100%)
+		top: 6px
+		left: 10px
+		box-shadow: 0 -.25rem 1.25rem rgba($dark, 1)
+		transform: rotate3d(-1, 0, 0, 8deg)
+		transform-style: preserve-3d
+		border-radius: .5rem
++media-breakpoint-up(xs)
+	section, footer
+		padding-top: 4rem
+		padding-bottom: 2rem
+	header
+		position: absolute
+		width: 100%
+		z-index: 10
+	.s2
+		margin-top: -20vh
+		padding-top: 0
+	h1
+		//font-size: 24px
+	h3
+		font-size: 3rem
+		margin-bottom: 2rem
++media-breakpoint-up(sm)
+	h1
+		//font-size: 30px
+
++media-breakpoint-up(md)
+	h1
+		//font-size: 36px
+
++media-breakpoint-up(lg)
+	h1
+		font-size: 72px
