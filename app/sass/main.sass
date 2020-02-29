@@ -1,0 +1,36 @@
+@import vars
+@import fonts
+@import libs
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+	color: $text
+
+.col
+	text-align: center
+	background-color: rgba(gray, .2)
+	.c
+		background-color: rgba(green, .1)
+	&:nth-child(2n)
+		background-color: rgba(gray, .3)
+		.c
+			background-color: rgba(blue, .1)

@@ -1,0 +1,67 @@
+fonts: 
+    d3: 70 Bebas Neue / 36
+    d4(400 + 700): 60 Bebas Neue / 46 
+    h1(400 + 700): 52 Bebas Neue / 42 
+    h2: 44 Bebas Neue / 36
+    h3: 24 Bebas Neue
+    h4: 18 Bebas Neue
+    text: 16 PT Mono
+    btntext: 28 Bebas Neue
+    lead: 18 PT Mono
+    big-lead: 24 PT Mono
+colors:
+    primary: #23DC5C
+    secondary: #FE3434
+    text-color: #212128
+    white: #ffffff
+    text05: rgba(#212128, .5)
+    white05: rgba(#ffffff, .5)
+    light-ping: #FAF4F4
+    bg-dark: #292930
+allert-default: 
+    background-white: rgba(255, 255, 255, 0.1);
+    PT Mono;
+    bold;
+    16px;
+    +
+    icon:before(white, 36x36 pix )
+btn-primary: 
+    btntext: 28 Bebas Neue, 400, white
+    background: primary
+btn-secondary: 
+    btntext: 28 Bebas Neue, 400, white
+    background: primary
+btn-icon-before:
+    icon:before: white, 16px (height: 16)
+badge_primary:
+    text: 18px, bold, white, bg-primary, PT Mono
+card:
+    background-color: transparent
+    title: h4, upp
+    pretitle: lead, PT Mono, text05 + badge_primary:after 
+card(2):
+    background-color: transparent
+    border: none
+    text-align: center
+    icons: 64x64 px, stoke primary 
+    text: lead, PT Mono, white
+card(3):
+    background-color: transparent
+    border: 4px solid primary
+    title: h2, upp, strong, primary
+    beforetitle: lead, PT Mono, white + primary
+card(4):
+    thumb video: max-w 350x200px, + btn.play 
+    background-color: transparent
+    title: h5, upp, 
+    beforetitle: lead, PT Mono, text05
+card(5):
+    background-color: white
+    title: big-lead, text-color + primary 
+section:
+    pretitle: lead, text05 + icon:before
+    title: .h1
+    &:dark
+        textcolor: white
+colors:
+    pretitle-icon:before: (bg-transparent, border: 2px solid primary)
