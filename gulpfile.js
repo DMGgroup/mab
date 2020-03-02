@@ -52,6 +52,7 @@ gulp.task('scripts', function() {
             'node_modules/bootstrap/dist/js/bootstrap.min.js',
             'node_modules/feather-icons/dist/feather.min.js',
             'node_modules/magnific-popup/dist/jquery.magnific-popup.min.js',
+            'node_modules/slick-carousel/slick/slick.min.js',
             'app/js/_libs.js', // JS libraries (all in one)
             'app/js/_custom.js', // Custom scripts. Always at the end
         ])

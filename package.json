@@ -26,6 +26,8 @@
 		"magnific-popup": "^1.1.0"
 	},
 	"dependencies": {
-		"feather-icons": "^4.26.0"
+		"feather-icons": "^4.26.0",
+		"popper.js": "^1.16.1",
+		"slick-carousel": "^1.8.1"
 	}
 }
