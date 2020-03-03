@@ -21,8 +21,8 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Pala', sans-serif
-	font-weight: 700
+	font-family: 'Roboto', sans-serif
+	font-weight: 400
 	overflow-x: hidden
 	color: $text
 .upp
@@ -33,28 +33,34 @@ body
 	text-transform: uppercase
 	font-size: 1.3rem
 	&.btn-lg
-		padding: 1rem 
+		padding: 1rem 2rem
 .bg-full
 	background-repeat: no-repeat
 	background-size: cover
 .s1
 	position: relative
+	padding: 120px 0 0 0
 	.row
-		min-height: 580px
+		min-height: 670px
 		height: auto
 	&:before
-		content: ""
+		//content: ""
 		position: absolute
 		width: 100%
 		height: 100%
 		top: 0
 		left: 0
 		background-color: rgba(#bcd0c5, .8)
-h1
+	div
+		background-repeat: no-repeat
+		background-size: cover
+.h1
 	font-weight: bold
 .s2
 	.jumbotron
 		position: relative
+		background-color: #fff
+		border-radius: 2px
 	.sh
 		perspective: 1000px
 		width: 100%
@@ -66,13 +72,15 @@ h1
 		height: calc(100%)
 		top: 6px
 		left: 10px
-		box-shadow: 0 -.25rem 1.25rem rgba($dark, 1)
-		transform: rotate3d(-1, 0, 0, 8deg)
+		box-shadow: 0 -.25rem 1.25rem rgba($dark, .8)
+		transform: rotate3d(-1, 0, 0, 6deg)
 		transform-style: preserve-3d
-		border-radius: .5rem
+		border-radius: 2px
+.s3
+	padding: 3.5rem
 .s4
 	.btn
-		margin-top: 1rem
+		margin-top: 2rem
 	.row
 		margin-bottom: 4rem
 .s5
@@ -83,33 +91,34 @@ h1
 		p
 			padding-left: 1rem
 			padding-right: 1rem
+			padding-top: 1rem
 		&.it-first
 			.badge-pill
 				&:before
 					content: ""
 					height: 2px
-					background-color: $secondary
+					border-top: 2px dotted $primary
 					width: 50%
 					margin-left: auto
 					margin-right: auto
 					margin-bottom: 2.5rem
 					position: absolute
-					top: 15px
-					left: 50%
+					top: 13px
+					left: 49%
 					z-index: -1
 		&.it-last
 			.badge-pill
 				&:before
 					content: ""
 					height: 2px
-					background-color: $secondary
+					border-top: 2px dotted $primary
 					width: 50%
 					margin-left: auto
 					margin-right: auto
 					margin-bottom: 2.5rem
 					position: absolute
-					top: 15px
-					left: 0%
+					top: 13px
+					left: 1%
 					z-index: -1
 	.badge-pill
 		width: 25px
@@ -117,25 +126,44 @@ h1
 		line-height: 22px
 		padding: 0
 		margin: 0 0 1rem 0
+		&.badge-primary
+			width: 10px
+			height: 10px
+			margin: 0
 		&.badge-secondary
 			background-color: $white
 			border: 2px solid $secondary
 			color: $secondary
 		&:before
 			content: ""
-			height: 2px
-			background-color: $secondary
-			width: 100%
+			height: 4px
+			border-top: 2px dotted $primary
+			width: 99%
 			margin-left: auto
 			margin-right: auto
-			margin-bottom: 2.5rem
 			position: absolute
-			top: 15px
+			top: 13px
 			left: 0
 			z-index: -1
+.s6
+	.col-lg-4
+		padding-bottom: 2.5rem
+		background-size: contain
+		background-position: 50% 80%
+		background-repeat: no-repeat
+		transition: all 0.2s ease-in-out
+		&:hover
+			background-position: 50% 100%
+
 .s8
 	.gall-next, .gall-prev
-		line-height: 1
+		padding: 0 !important
+		height: 24px
+		line-height: 0
+		img
+			vertical-align: middle
+			padding: 0
+			height: 10px
 
 .gall-slider-small
 	img
@@ -150,6 +178,25 @@ h1
 .w-20 
 	max-width: 20% !important
 	width: 20% !important
+.w-90
+	max-width: 90% !important
+	width: 90% !important
+.news-nv
+	position: absolute
+	right: 0
+	bottom: 0
+	width: 20.8%
+	text-align: center
+	height: 68px
+	background-color: $secondary
+	.btn
+		height: 100%
+		width: 50%
+		line-height: 0
+	.news-prev
+		float: left
+		border-right: 1px solid $white
+	
 +media-breakpoint-up(xs)
 	section, footer
 		padding-top: 4rem
@@ -158,48 +205,73 @@ h1
 		position: absolute
 		width: 100%
 		z-index: 10
+		transition: all 0.2s ease-in-out
+		&.active
+			position: fixed
+			top: -70px
+			background-color: $accent
+			.navbar
+				min-height: 60px
+				.w-90
+					max-width: 100% !important
+					width: 100% !important
+			.nav-link
+				font-size: 1rem
+			.navbar-brand
+				img
+					height: 40px
+
+		&.ready
+			top: 0
+
 	.s2
-		margin-top: -160px
+		margin-top: -100px
 		padding-top: 0
-	h1
+	.h1
 		//font-size: 24px
-	h3
-		font-size: 2.5rem
-		margin-bottom: 2rem
+	.h3
+		font-size: 2.75rem
+		margin-bottom: 0rem
 +media-breakpoint-up(sm)
-	h1
+	.h1
 		//font-size: 30px
 
 +media-breakpoint-up(md)
-	h1
+	.h1
 		//font-size: 36px
 
 +media-breakpoint-up(lg)
-	h2
-		font-size: 3.75rem
+	.h2
+		font-size: 4rem
 		line-height: 1
 		margin-bottom: 0
-	h1
+	.h1
 		font-size: 60px
-		padding-bottom: 6rem
+		padding-bottom: 2rem
 		line-height: 1.4
-	h4
+	.h4
 		font-size: 2rem
 		margin-bottom: 1.75rem
 	.navbar
 		min-height: 120px
-		.nav-link
-			font-size: 1.25em
+	.nav-link
+		font-size: 1.25em
+		padding: .25rem 1rem
+		border: 1px solid transparent
+		display: inline-block
+		&.active
+			border: 1px solid $dark
+			display: inline-block
+	.navbar-brand
+		img
+			height: 60px
 	.jumbotron
 		padding: 3rem 6rem
 		margin-bottom: 2.5rem
 	.line
-		height: 4px
+		height: 2px
 		background-color: $dark
 		width: 160px
 		margin-left: auto
 		margin-right: auto
 		margin-bottom: 2.5rem
-	.navbar-brand
-		max-width: 130px
-

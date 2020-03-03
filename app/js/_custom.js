@@ -92,8 +92,8 @@ document.addEventListener("DOMContentLoaded", function() {
     $slickNews.slick({
         autoplay: true,
         speed: 800,
-        slidesToShow: 3,
-        slidesToScroll: 3,
+        slidesToShow: 1,
+        slidesToScroll: 1,
         arrows: false,
         infinite: true,
         adaptiveHeight: false,
@@ -118,4 +118,65 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
-});
+    $('.news-prev').click(function() {
+        if (!$(this).hasClass('hid')) {
+            $slickNews.slick('slickPrev')
+        }
+    })
+
+    $('.news-next').click(function() {
+        if (!$(this).hasClass('hid')) {
+            $slickNews.slick('slickNext')
+        }
+    })
+
+})
+
+function swLang(lang) {
+    var melg = $('html').attr('lang')
+
+    if (lang !== melg) {
+        $('html').attr('lang', lang)
+    }
+
+    if (lang === 'en-US') {
+        console.log(lang === 'en-US')
+    } else {
+
+    }
+
+}
+
+$(window).scroll(function() {
+    var height = $(window).scrollTop()
+    if (height > $(window).height()) {
+        $('header').addClass('active')
+        setTimeout(function() {
+            $('header').addClass('ready')
+        }, 300)
+    } else {
+        $('header').removeClass('ready')
+        $('header').removeClass('active')
+
+    }
+})
+
+$('#swLang a').on('click', function(e) {
+    e.preventDefault()
+    $('#swLang a').removeClass('active')
+    $(this).addClass('active')
+})
+$('#navbarNav a').on('click', function(e) {
+    e.preventDefault()
+    $('#navbarNav a').removeClass('active')
+    $(this).addClass('active')
+})
+
+$(document).on('click', '[data-href]', function(e) {
+    e.preventDefault()
+    var target = $(this).data('href')
+    var goto = $(target)
+    $('html, body').animate({
+        scrollTop: goto.offset().top - 60
+    }, 800)
+})
