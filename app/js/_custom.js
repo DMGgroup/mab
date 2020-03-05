@@ -91,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     $slickNews.slick({
         autoplay: true,
+        fade: true,
         speed: 800,
         slidesToShow: 1,
         slidesToScroll: 1,
