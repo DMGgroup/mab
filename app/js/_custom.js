@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
         slidesToScroll: 1,
         arrows: false,
         infinite: true,
-        adaptiveHeight: true,
+        adaptiveHeight: false,
         dots: false,
         responsive: [{
             breakpoint: 768,

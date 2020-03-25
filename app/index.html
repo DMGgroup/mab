@@ -20,45 +20,46 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-            <a class="navbar-brand" href="#">
+            <span class="navbar-brand">
                 <img class="img-fluid" src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x" alt="pic1">
-            </a>
+            </span>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav nav-fill w-90">
+                <ul class="navbar-nav nav-fill">
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-href="#about">О НАС</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-href="#education">ОБУЧЕНИЕ</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" data-href="#up">ПОВЫШЕНИЕ</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-href="#news">НОВОСТИ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-href="#gall">ГАЛЕРЕЯ </a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-href="#partners">ПАРТНЕРЫ </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#" data-href="#gall">ГАЛЕРЕЯ </a>
+                        <a class="nav-link" href="#" data-href="#up">ФОТОКОНКУРС</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" data-href="#footer">КОНТАКТЫ </a>
                     </li>
                 </ul>
             </div>
-            <ul class="navbar-nav ml-md-auto" id="swLang">
+            <ul class="list-unstyled" hidden id="swLang">
                 <li class="nav-item">
                     <a class="nav-link" onclick="swLang('en')" href="#">
                        EN
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" onclick="swLang('ru')" href="#">
+                    <a class="nav-link active" onclick="swLang('ru')" href="#">
                         RU
                     </a>
                 </li>
@@ -66,45 +67,52 @@
         </nav>
     </header>
     <main>
-        <section class="s1 bg-full" data-bg="img/preview.jpg" hidden>
+        <section class="s1 bg-full" data-bg="img/preview.jpg" id="about">
             <div class="container">
-                <div class="row justify-content-center align-content-center">
-                    <div class="col-md-10 col-lg-8">
-                        <p class="h1" class="upp tc" id="google_translate_element">Международная Ассоциация Бровистов</p>
+                <div class="row justify-content-center align-content-lx-center">
+                    <div class="col-md-12 col-lg-10 text-center">
+                        <p class="h1 text-uppercase">Международная Ассоциация Бровистов</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="s1 bg-full">
+        <section class="s1 bg-full" hidden>
             <div class="row no-gutters align-content-center">
                 <div class="col-7" data-bg="img/preview.jpg"></div>
                 <div class="col-5 p-4">
-                    <p class="upp tc h1" id="google_translate_element">Международная Ассоциация Бровистов</p>
+                    <p class="upp tc h1 ">Международная Ассоциация Бровистов</p>
                     <p class="lead tc mb-5">Специалисты команды IABA регулярно учавствуют в престижных чемпионатах и занимают призовые места, а окружение этому всячески способствует и поддерживает!</p>
                     <div class="tc mb-5 pt-5">
                         <button class="btn btn-outline-secondary mx-3 btn-lg">Подробнее о IABA</button>
                         <button class="btn btn-primary btn-lg mx-3">Вступить в IABA</button>
                     </div>
                     <p class="mt-4 tc">Специалисты команды IABA регулярно учавствуют в престижных чемпионатах и занимают призовые места,</p>
-
                 </div>
             </div>
         </section>
-        <section class="s2" hidden>
+        <section class="s2">
             <div class="container">
-                <div class="row justify-content-center align-content-center">
-                    <div class="col-lg-10">
+                <div class="row justify-content-center align-content-lx-center">
+                    <div class="col-lg-12">
                         <div class="sh">
                             <div class="sh-iner"></div>
                         </div>
                         <div class="jumbotron">
                             <div class="line"></div>
-                            <p class="tc" onclick="doGet(this)">
-                                Мы создали не простую Ассоциацию, а большую бровную Community. В МАБ (Международная Ассоциация Бровистов) состоят бровисты из различных стран мира. Наши учасники получают огромные возможности для развития и поддержки профессиональной деятельности. Эта
-                                ассоциция была созданна не просто как очередные курсы по повышению квалификации, а как Community, где лучшие специалисты, Украины и мира, а именно Анна Кравченко сделают все, что бы помочь тебе реализовать свои возможности.
-                                IABA - это о проффесионализме и любви к своему делу, о beauty-ценностях и эстетике. Специалисты команды IABA регулярно учавствуют в престижных чемпионатах и занимают призовые места, а окружение этому всячески способствует
-                                и поддерживает!
+                            <p class="tc lead f-500">
+                                Международная Ассоциация Бровистов (МАБ) — это обучение и продвижение лучших бровистов мира! Мы создали не простую Ассоциацию, а большую бровную Community. Наши учасники получают огромные возможности для развития и поддержки профессиональной деятельности.
+                                <br>Президент МАБ - <span style="color: #759b81;">Анна Кравченко.</span>
                             </p>
+                            <div class="pt-4">
+                                <div class="row justify-content-center align-content-center">
+                                    <div class="col-sm-6 col-lg-5 col-xl-6 tc">
+                                        <button class="btn btn-primary btn-lg btn-block">вступить в IABA</button>
+                                    </div>
+                                    <div class="col-sm-6 col-lg-5 col-xl-6 tc">
+                                        <button class="btn btn-outline-dark btn-lg btn-block">СТАТУТ IABA</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -115,7 +123,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <p class="upp tc h3">В Ассоциации Есть 3 Уровня Членства</p>
+                        <p class="upp tc h3 m-0">В Ассоциации Есть 3 Уровня Членства</p>
                     </div>
                 </div>
             </div>
@@ -123,15 +131,15 @@
         <section class="s4">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-md-5 col-lg-6">
                         <img class="img-fluid" src="img/@1x/pic1.jpg" srcset="img/@1x/pic1.jpg 1x, img/@2x/pic1.jpg 2x" alt="pic1">
                         <button class="btn btn-primary btn-lg btn-block">Подать заявку</button>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-7 col-lg-6">
                         <p class="h2">Level 1</p>
-                        <p class="h4">BASIC</p>
-                        <p class="lead">Что получают члены IABA Level 1:</p>
-                        <ul class="list-unstyled pb-4">
+                        <p class="lead-plus m-0">BASIC</p>
+                        <p class="lead f-500 m-0">Что получают члены IABA Level 1:</p>
+                        <ul class="list-unstyled">
                             <li><i data-feather="minus"></i> участие в мероприятиях IABA на льготных условиях;</li>
                             <li><i data-feather="minus"></i> бесплатное участие в предчемпионатных тренингах;</li>
                             <li><i data-feather="minus"></i> специальные цены на продукцию ELAN и DISICIDE (-10%);</li>
@@ -139,53 +147,59 @@
                             <li><i data-feather="minus"></i> доступ к участию в закрытых мероприятиях</li>
                         </ul>
 
-                        <p class="lead">Для квалификации Level 1 необходимо:</p>
+                        <p class="lead f-500 m-0">Для квалификации Level 1 необходимо:</p>
                         <ul class="list-unstyled">
                             <li><i data-feather="minus"></i> иметь опыт практической работы;</li>
-                            <li><i data-feather="minus"></i> прислать портфолио работ в электронном виде (5-профессиональных фотографий "до и после" моделирования и окрашивания бровей);</li>
-                            <li><i data-feather="minus"></i> пройти курс повышения квалификации и сдать экзамен в академии "РукиНожницы" (стоимость 1000грн);</li>
-                            <li><i data-feather="minus"></i> оплатить вступительный (ежегодный) членский взнос в размере (800грн)</li>
+                            <li><i data-feather="minus"></i> выслать информацию о себе:
+                                <ul>
+                                    <li>профессиональных фото "до" и "после" моделирования и окрашивания бровей;</li>
+                                    <li>где проходили профессиональное обучение (база и повышение квалификации, если таковое имеется);</li>
+                                    <li>опыт работы;</li>
+                                    <li>ссылка на рабочую страницу в социальных сетях.</li>
+                                </ul>
+                            </li>
+                            <li><i data-feather="minus"></i> пройти курс повышения квалификации и сдать экзамен в академии "РукиНожницы". Cтоимость – 1 500 грн;</li>
+                            <li><i data-feather="minus"></i> оплатить вступительный (ежегодный) членский взнос в размере 800грн</li>
                         </ul>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-md-7 col-lg-6 order-2 order-lg-1">
                         <p class="h2">Level 2</p>
-                        <p class="h4">ADVANCED</p>
-                        <p class="lead">Что получают члены IABA Level 2:</p>
-                        <ul class="list-unstyled pb-4">
-                            <li><i data-feather="minus"></i> возможность официально преподавать на косметике ELAN;</li>
+                        <p class="lead-plus m-0">ADVANCED</p>
+                        <p class="lead f-500 m-0">Что получают члены IABA Level 2:</p>
+                        <ul class="list-unstyled">
+                            <li><i data-feather="minus"></i> возможность официально преподавать на косметике ELAN professional line;</li>
                             <li><i data-feather="minus"></i> участие в мероприятиях IABA на льготных условиях;</li>
                             <li><i data-feather="minus"></i> бесплатное участие в предчемпионатных тренингах;</li>
-                            <li><i data-feather="minus"></i> специальные цены на продукцию ELAN и DISICIDE (-10%);</li>
+                            <li><i data-feather="minus"></i> специальные цены на продукцию ELAN(-15%) и DISICIDE (-10%);</li>
                             <li><i data-feather="minus"></i> доступ в закрытый Telegram-канал IABA;</li>
-                            <li><i data-feather="minus"></i> доступ к участию в закрытых мероприятиях.</li>
+                            <li><i data-feather="minus"></i> доступ к участию в закрытых мероприятиях;</li>
+                            <li><i data-feather="minus"></i> персонализированный водяной знак для размещения на фотографиях работ.</li>
                         </ul>
-
-                        <p class="lead">Для квалификации Level 2 необходимо:</p>
-                        <ul class="list-unstyled pb-4">
-                            <li><i data-feather="minus"></i> иметь опыт практической работы;</li>
-                            <li><i data-feather="minus"></i> прислать портфолио работ в электронном виде (5профессиональных фотографий "до и после" моделирования и окрашивания бровей);</li>
-                            <li><i data-feather="minus"></i> пройти курс повышения квалификации и сдать экзамен в академии "РукиНожницы" (стоимость 1000грн);</li>
-                            <li><i data-feather="minus"></i> оплатить вступительный (ежегодный) членский взнос в размере (800грн)</li>
+                        <p class="lead f-500 m-0">Для квалификации Level 2 необходимо:</p>
+                        <ul class="list-unstyled">
+                            <li><i data-feather="minus"></i> защитить Level 1;</li>
+                            <li><i data-feather="minus"></i> быть призером международного чемпионата по моделированию и окрашиванию бровей или макияжу;</li>
+                            <li><i data-feather="minus"></i> пройти курс повышения квалификации, выполнить презентационную работу и сдать экзамен в академии «Руки-Ножницы». Стоимость — 1500 грн;</li>
+                            <li><i data-feather="minus"></i> оплатить вступительный (ежегодный) членский взнос в размере 600 грн.</li>
                         </ul>
-
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="img/@1x/pic1.jpg" srcset="img/@1x/pic1.jpg 1x, img/@2x/pic1.jpg 2x" alt="pic1">
+                    <div class="col-md-5 col-lg-6 order-1 order-lg-2">
+                        <img class="img-fluid" src="img/@1x/pic2.jpg" srcset="img/@1x/pic2.jpg 1x, img/@2x/pic2.jpg 2x" alt="pic2">
                         <button class="btn btn-primary btn-lg btn-block">Подать заявку</button>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-6">
-                        <img class="img-fluid" src="img/@1x/pic1.jpg" srcset="img/@1x/pic1.jpg 1x, img/@2x/pic1.jpg 2x" alt="pic1">
+                <div class="row mb-0">
+                    <div class="col-md-5 col-lg-6">
+                        <img class="img-fluid" src="img/@1x/pic3.jpg" srcset="img/@1x/pic3.jpg 1x, img/@2x/pic3.jpg 2x" alt="pic3">
                         <button class="btn btn-primary btn-lg btn-block">Подать заявку</button>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-md-7 col-lg-6">
                         <p class="h2">Level 3</p>
-                        <p class="h4">Proficiency</p>
-                        <p class="lead">Что получают члены IABA Level 3:</p>
-                        <ul class="list-unstyled pb-4">
+                        <p class="lead-plus m-0">Proficiency</p>
+                        <p class="lead f-500 m-0">Что получают члены IABA Level 3:</p>
+                        <ul class="list-unstyled">
                             <li><i data-feather="minus"></i> участвовать в конференции IABA в качестве докладчика на бесплатной основе не менее раза в год;</li>
                             <li><i data-feather="minus"></i> участие в мероприятиях IABA на льготных условиях;</li>
                             <li><i data-feather="minus"></i> бесплатное участие в предчемпионатных тренингах;</li>
@@ -194,7 +208,7 @@
                             <li><i data-feather="minus"></i> доступ к участию в закрытых мероприятиях</li>
                         </ul>
 
-                        <p class="lead">Для квалификации Level 3 необходимо:</p>
+                        <p class="lead f-500 m-0">Для квалификации Level 3 необходимо:</p>
                         <ul class="list-unstyled pb-4">
                             <li><i data-feather="minus"></i> иметь опыт проведения тренировок к Чемпионатам Украины и международным по моделированию и окрашиванию бровей и наличие призовых мест учеников;</li>
                             <li><i data-feather="minus"></i> участие на международных конференциях в качестве докладчика;</li>
@@ -216,13 +230,13 @@
                     <div class="col tc">
                         <div class="it it-first">
                             <span class="badge badge-primary badge-pill"> </span>
-                            <p class="">Участие в мероприятиях на льготных условиях </p>
+                            <p class="f-500 lead">Участие в мероприятиях на льготных условиях </p>
                         </div>
                     </div>
                     <div class="col tc">
                         <div class="it">
                             <span class="badge badge-primary badge-pill"> </span>
-                            <p class="">
+                            <p class="f-500 lead">
                                 -10% на продукцию ELAN и DISICIDE
                             </p>
                         </div>
@@ -230,7 +244,7 @@
                     <div class="col tc">
                         <div class="it">
                             <span class="badge badge-primary badge-pill"> </span>
-                            <p class="">
+                            <p class="f-500 lead">
                                 Доступ в закрытый Telegram-канал
                             </p>
                         </div>
@@ -238,7 +252,7 @@
                     <div class="col tc">
                         <div class="it">
                             <span class="badge badge-primary badge-pill"> </span>
-                            <p class="">
+                            <p class="f-500 lead">
                                 Бесплатное участие в предчемпионатных тренингах
                             </p>
                         </div>
@@ -246,7 +260,7 @@
                     <div class="col tc">
                         <div class="it it-last">
                             <span class="badge badge-primary badge-pill"> </span>
-                            <p class="">
+                            <p class="f-500 lead">
                                 Доступ к участию в закрытых мероприятиях
                             </p>
                         </div>
@@ -264,14 +278,14 @@
         </section>
         <section id="up" class="s6">
             <div class="container">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-12">
-                        <p class="upp tc h3">Повышение квалификации</p>
+                        <p class="upp tc h3">Обучение</p>
                         <div class="line"></div>
                     </div>
-                    <div class="col-lg-4" data-bg="img/@1x/card-shadow.png">
+                    <div class="col-11 col-sm-10 col-md-6 col-lg-4" data-bg="img/@1x/card-shadow.png">
                         <div class="card">
-                            <img class="img-fluid" src="img/@1x/pic2.jpg" srcset="img/@1x/pic2.jpg 1x, img/@2x/pic2.jpg 2x" alt="pic1">
+                            <img class="img-fluid" src="img/@1x/level1.jpg" srcset="img/@1x/level1.jpg 1x, img/@2x/level1.jpg 2x" alt="level1">
                             <div class="card-body tc" style="background-color: #eff5f1;">
                                 <p class="h4">Level 1 (Basic)</p>
                                 <ul class="list-unstyled">
@@ -286,9 +300,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4" data-bg="img/@1x/card-shadow.png">
+                    <div class="col-11 col-sm-10 col-md-6 col-lg-4" data-bg="img/@1x/card-shadow.png">
                         <div class="card">
-                            <img class="img-fluid" src="img/@1x/pic2.jpg" srcset="img/@1x/pic2.jpg 1x, img/@2x/pic2.jpg 2x" alt="pic1">
+                            <img class="img-fluid" src="img/@1x/level2.jpg" srcset="img/@1x/level2.jpg 1x, img/@2x/level2.jpg 2x" alt="level2">
                             <div class="card-body tc" style="background-color: #cbdbd0;">
                                 <p class="h4">Level 2 (Advanced)</p>
                                 <ul class="list-unstyled">
@@ -303,9 +317,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4" data-bg="img/@1x/card-shadow.png">
+                    <div class="col-11 col-sm-10 col-md-6 col-lg-4" data-bg="img/@1x/card-shadow.png">
                         <div class="card">
-                            <img class="img-fluid" src="img/@1x/pic2.jpg" srcset="img/@1x/pic2.jpg 1x, img/@2x/pic2.jpg 2x" alt="pic1">
+                            <img class="img-fluid" src="img/@1x/level3.jpg" srcset="img/@1x/level3.jpg 1x, img/@2x/level3.jpg 2x" alt="level3">
                             <div class="card-body tc">
                                 <p class="h4">Level 3 (Proficiency)</p>
                                 <ul class="list-unstyled">
@@ -333,83 +347,83 @@
                 </div>
                 <div class="row no-gutters">
                     <div class="col-12">
+                        <div class="slider-inner">
+                            <div class="slider-news">
 
-                        <div class="slider-news">
-
-                            <div class="item">
-                                <div class="row align-items-center h-100 no-gutters">
-                                    <div class="col-7">
-                                        <div class="row align-items-center h-100 no-gutters bg-secondary">
-                                            <div class="col-8">
-                                                <img class="img-fluid" src="img/@1x/preview.jpg" srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x" alt="pic1">
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="tc px-4 py-5 text-light">
-                                                    Бровисты установили Рекорд Украины «Самый массовый чемпионат по моделированию и окрашиванию бровей»
-                                                </p>
+                                <div class="item">
+                                    <div class="row align-items-center h-100 no-gutters">
+                                        <div class="col-md-7">
+                                            <div class="row align-items-center h-100 no-gutters bg-secondary">
+                                                <div class="col-md-8">
+                                                    <img class="img-fluid" src="img/@1x/bs1.jpg" srcset="img/@1x/bs1.jpg 1x, img/@2x/bs1.jpg 2x" alt="bs1">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="tc px-4 py-5 text-light">
+                                                        Бровисты установили Рекорд Украины «Самый массовый чемпионат по моделированию и окрашиванию бровей»
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="row align-content-center h-100 no-gutters bg-primary">
-                                            <div class="col-6">
-                                                <img class="img-fluid" src="img/@1x/preview.jpg" srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x" alt="pic1">
-                                                <p class="px-4 py-5 tc">
-                                                    Курс повышения квалификации для кандидатов в члены ОО IABA Level1
-                                                </p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p class="px-4 py-5 tc">
-                                                    Самое массовое окрашивание бровей на одной локации
+                                        <div class="col-md-5">
+                                            <div class="row align-content-center h-100 no-gutters bg-primary">
+                                                <div class="col">
+                                                    <img class="img-fluid" src="img/@1x/s1.jpg" srcset="img/@1x/s1.jpg 1x, img/@2x/s1.jpg 2x" alt="s1">
+                                                    <p class="px-3 py-5 tc">
+                                                        Курс повышения квалификации для кандидатов в члены ОО IABA Level1
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="px-3 py-5 tc">
+                                                        Самое массовое окрашивание бровей на одной локации
 
-                                                </p>
-                                                <img class="img-fluid" src="img/@1x/preview.jpg" srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x" alt="pic1">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="item">
-                                <div class="row align-items-center h-100 no-gutters">
-                                    <div class="col-7">
-                                        <div class="row align-items-center h-100 no-gutters bg-secondary">
-                                            <div class="col-8">
-                                                <img class="img-fluid" src="img/@1x/preview.jpg" srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x" alt="pic1">
-                                            </div>
-                                            <div class="col-4">
-                                                <p class="tc px-4 py-5 text-light">
-                                                    Бровисты установили Рекорд Украины «Самый массовый чемпионат по моделированию и окрашиванию бровей»
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-5">
-                                        <div class="row align-content-center h-100 no-gutters bg-primary">
-                                            <div class="col-6">
-                                                <img class="img-fluid" src="img/@1x/preview.jpg" srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x" alt="pic1">
-                                                <p class="px-4 py-5 tc text-light">
-                                                    Курс повышения квалификации для кандидатов в члены ОО IABA Level1
-                                                </p>
-                                            </div>
-                                            <div class="col-6">
-                                                <p class="px-4 py-5 tc text-light">
-                                                    Самое массовое окрашивание бровей на одной локации
-
-                                                </p>
-                                                <img class="img-fluid" src="img/@1x/preview.jpg" srcset="img/@1x/preview.jpg 1x, img/@2x/preview.jpg 2x" alt="pic1">
+                                                    </p>
+                                                    <img class="img-fluid" src="img/@1x/ms1.jpg" srcset="img/@1x/ms1.jpg 1x, img/@2x/ms1.jpg 2x" alt="pic1">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="item">
+                                    <div class="row align-items-center h-100 no-gutters">
+                                        <div class="col-md-7">
+                                            <div class="row align-items-center h-100 no-gutters bg-secondary">
+                                                <div class="col-md-8">
+                                                    <img class="img-fluid" src="img/@1x/bs1.jpg" srcset="img/@1x/bs1.jpg 1x, img/@2x/bs1.jpg 2x" alt="bs1">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <p class="tc px-4 py-5 text-light">
+                                                        Бровисты установили Рекорд Украины «Самый массовый чемпионат по моделированию и окрашиванию бровей»
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="row align-content-center h-100 no-gutters bg-primary">
+                                                <div class="col">
+                                                    <img class="img-fluid" src="img/@1x/s1.jpg" srcset="img/@1x/s1.jpg 1x, img/@2x/s1.jpg 2x" alt="s1">
+                                                    <p class="px-3 py-5 tc">
+                                                        Курс повышения квалификации для кандидатов в члены ОО IABA Level1
+                                                    </p>
+                                                </div>
+                                                <div class="col">
+                                                    <p class="px-3 py-5 tc">
+                                                        Самое массовое окрашивание бровей на одной локации
+
+                                                    </p>
+                                                    <img class="img-fluid" src="img/@1x/ms1.jpg" srcset="img/@1x/ms1.jpg 1x, img/@2x/ms1.jpg 2x" alt="pic1">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
-
+                            <div class="news-nv">
+                                <button class="btn news-prev"><img class="img-fluid" src="img/arr-prev.svg"></button>
+                                <button class="btn news-next"><img class="img-fluid" src="img/arr-next.svg"></button>
+                            </div>
                         </div>
-                        <div class="news-nv">
-                            <button class="btn news-prev"><img class="img-fluid" src="img/arr-prev.svg"></button>
-                            <button class="btn news-next"><img class="img-fluid" src="img/arr-next.svg"></button>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -421,7 +435,7 @@
                         <p class="upp tc h3">Галерея</p>
                         <div class="line"></div>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 order-1">
                                 <div class="gall-slider-big">
                                     <a class="image-popup-no-margins" href="img/@2x/g1.jpg">
                                         <img class="img-fluid" src="img/@1x/g1.jpg" srcset="img/@1x/g1.jpg 1x, img/@2x/g1.jpg 2x" alt="g1">
@@ -431,7 +445,7 @@
                                     </a>
                                 </div>
                             </div>
-                            <div class="col-lg-3 text-right">
+                            <div class="col-lg-3 text-right order-3 order-lg-2">
                                 <div class="mb-4">
                                     <div class="gall-slider-norm">
                                         <a class="image-popup-no-margins" href="img/@2x/g2.jpg">
@@ -442,7 +456,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="mt-4 ">
+                                <div class="mt-4">
                                     <div class="gall-slider-small">
                                         <a class="image-popup-no-margins" href="img/@2x/g4.jpg">
                                             <img class="img-fluid " src="img/@1x/g4.jpg " srcset="img/@1x/g4.jpg 1x, img/@2x/g4.jpg 2x " alt="g4 ">
@@ -452,13 +466,16 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="mt-4 ">
+                                <div class="mt-4">
+                                    <button class="btn gall-prev"><img class="img-fluid" src="img/arr-next.svg"></button>
+                                </div>
+                                <div class="mb-4  d-block d-lg-none">
                                     <button class="btn gall-next"><img class="img-fluid" src="img/arr-prev.svg"></button>
                                 </div>
                             </div>
-                            <div class="col-lg-3 ">
-                                <div class="mb-4 ">
-                                    <button class="btn gall-prev"><img class="img-fluid" src="img/arr-next.svg"></button>
+                            <div class="col-lg-3 order-2 order-lg-3">
+                                <div class="mb-4 d-none d-lg-block">
+                                    <button class="btn gall-next"><img class="img-fluid" src="img/arr-prev.svg"></button>
                                 </div>
                                 <div class="mb-4 ">
                                     <div class="gall-slider-small">
@@ -491,27 +508,46 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="slider-logo">
-                            <a target="_blank" href="https://google.com.ua">
-                                <img class="img-fluid " src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x " alt="pic3 ">
-                            </a>
-                            <a target="_blank" href="https://google.com.ua">
-                                <img class="img-fluid " src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x " alt="pic3 ">
-                            </a>
-                            <a target="_blank" href="https://google.com.ua">
-                                <img class="img-fluid " src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x " alt="pic3 ">
-                            </a>
-                            <a target="_blank" href="https://google.com.ua">
-                                <img class="img-fluid " src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x " alt="pic3 ">
-                            </a>
-                            <a target="_blank" href="https://google.com.ua">
-                                <img class="img-fluid " src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x " alt="pic3 ">
-                            </a>
-                            <a target="_blank" href="https://google.com.ua">
-                                <img class="img-fluid " src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x " alt="pic3 ">
-                            </a>
-                            <a target="_blank" href="https://google.com.ua">
-                                <img class="img-fluid " src="img/logo.svg" srcset="img/logo.svg 1x, img/logo.svg 2x " alt="pic3 ">
-                            </a>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl1.png" srcset="img/@1x/sl1.png 1x, img/@2x/sl1.png 2x " alt="sl1 ">
+                                </span>
+                            </div>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl2.png" srcset="img/@1x/sl2.png 1x, img/@2x/sl2.png 2x " alt="pic3 ">
+                                </span>
+                            </div>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl3.png" srcset="img/@1x/sl3.png 1x, img/@2x/sl3.png 2x " alt="pic3 ">
+                                </span>
+                            </div>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl4.png" srcset="img/@1x/sl4.png 1x, img/@2x/sl4.png 2x " alt="pic3 ">
+                                </span>
+                            </div>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl1.png" srcset="img/@1x/sl1.png 1x, img/@2x/sl1.png 2x " alt="sl1 ">
+                                </span>
+                            </div>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl2.png" srcset="img/@1x/sl2.png 1x, img/@2x/sl2.png 2x " alt="pic3 ">
+                                </span>
+                            </div>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl3.png" srcset="img/@1x/sl3.png 1x, img/@2x/sl3.png 2x " alt="pic3 ">
+                                </span>
+                            </div>
+                            <div class="itemlogo">
+                                <span>
+                                    <img src="img/@1x/sl4.png" srcset="img/@1x/sl4.png 1x, img/@2x/sl4.png 2x " alt="pic3 ">
+                                </span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -575,18 +611,19 @@
     </section>
     <script src="js/scripts.min.js "></script>
     <script type="text/javascript">
-        function googleTranslateElementInit() {
-            return new google.translate.TranslateElement({
-                    pageLanguage: 'ru'
-                },
-                'google_translate_element'
-            );
+        /*
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                function googleTranslateElementInit() {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    return new google.translate.TranslateElement({
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            pageLanguage: 'ru'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        },
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        'google_translate_element'
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    );
 
 
-        }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }*/
     </script>
 
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!-- <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
 </body>
 
 </html>
