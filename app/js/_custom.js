@@ -17,6 +17,271 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     })
 
+
+    $('.gal1').on('click', function() {
+        $('.gal1').magnificPopup({
+            type: 'image',
+            items: [{
+                    src: 'img/gallery/2018/7692037.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692034.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692032.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692031.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692030.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692029.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692027.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692025.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692024.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692023.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692022.jpg',
+                },
+            ],
+            gallery: {
+                enabled: true,
+            }
+            // (optionally) other options
+        }).magnificPopup('open');
+    })
+
+    $('.gal2').on('click', function() {
+        $('.gal2').magnificPopup({
+            type: 'image',
+            items: [{
+                    src: 'img/gallery/2018/7691963.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691970-К-3.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691908.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691979.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692030.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692037.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692010-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691971-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691990-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691929.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691924-К-1024x781.jpg',
+                },
+            ],
+            gallery: {
+                enabled: true,
+            }
+            // (optionally) other options
+        }).magnificPopup('open');
+    })
+
+    $('.gal3').on('click', function() {
+        $('.gal3').magnificPopup({
+            type: 'image',
+            items: [{
+                    src: 'img/gallery/2018/7691963.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691970-К-3.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691908.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691979.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692030.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692037.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692010-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691971-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691990-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691929.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691924-К-1024x781.jpg',
+                },
+            ],
+            gallery: {
+                enabled: true,
+            }
+            // (optionally) other options
+        }).magnificPopup('open');
+    })
+
+    $('.gal4').on('click', function() {
+        $('.gal4').magnificPopup({
+            type: 'image',
+            items: [{
+                    src: 'img/gallery/2018/7691963.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691970-К-3.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691908.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691979.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692030.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692037.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692010-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691971-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691990-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691929.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691924-К-1024x781.jpg',
+                },
+            ],
+            gallery: {
+                enabled: true,
+            }
+            // (optionally) other options
+        }).magnificPopup('open');
+    })
+
+    $('.gal5').on('click', function() {
+        $('.gal5').magnificPopup({
+            type: 'image',
+            items: [{
+                    src: 'img/gallery/2018/7691963.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691970-К-3.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691908.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691979.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692030.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692037.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692010-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691971-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691990-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691929.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691924-К-1024x781.jpg',
+                },
+            ],
+            gallery: {
+                enabled: true,
+            }
+            // (optionally) other options
+        }).magnificPopup('open');
+    })
+
+    $('.gal6').on('click', function() {
+        $('.gal6').magnificPopup({
+            type: 'image',
+            items: [{
+                    src: 'img/gallery/2018/7691963.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691970-К-3.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691908.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691979.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692030.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692037.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7692010-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691971-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691990-К.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691929.jpg',
+                },
+                {
+                    src: 'img/gallery/2018/7691924-К-1024x781.jpg',
+                },
+            ],
+            gallery: {
+                enabled: true,
+            }
+            // (optionally) other options
+        }).magnificPopup('open');
+    })
+
     var $slickBig = $('.gall-slider-big')
     var $slickSmall = $('.gall-slider-small')
     var $slickNorm = $('.gall-slider-norm')
@@ -167,9 +432,9 @@ $('#swLang a').on('click', function(e) {
     $('#swLang a').removeClass('active')
     $(this).addClass('active')
 })
-$('#navbarNav a').on('click', function(e) {
+$('#navbarNav a.go').on('click', function(e) {
     e.preventDefault()
-    $('#navbarNav a').removeClass('active')
+    $('#navbarNav a.go').removeClass('active')
     $(this).addClass('active')
 })
 

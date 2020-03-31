@@ -45,12 +45,20 @@ button, button:focus
 	font-size: 1.3rem
 	font-weight: 500
 	font-family: 'Artegra', sans-serif
+	&.rounded-pill
+		padding: .5rem
 .bg-full
 	background-repeat: no-repeat
 	background-size: cover
 .feather
 	stroke-width: 2
 	width: 12px
+
+.big
+	stroke-width: 1
+	width: auto
+	height: 42px
+	padding: 0 0 0
 .s1
 	position: relative
 	padding: 120px 0 0 0
@@ -332,10 +340,10 @@ header.active .navbar-light .navbar-toggler
 		position: relative
 		padding: 120px 0 0 0
 		.row
-			min-height: 250px
+			min-height: 300px
 			height: auto
 	.s5 .col
-		max-width: 20%	
+		max-width: 20%
 +media-breakpoint-up(lg)
 	.navbar-collapse .navbar-nav.nav-fill
 		background-color: transparent 
@@ -361,7 +369,7 @@ header.active .navbar-light .navbar-toggler
 		position: relative
 		padding: 120px 0 0 0
 		.row
-			min-height: 250px
+			min-height: 350px
 			height: auto
 	.h1
 		font-size: 42px
