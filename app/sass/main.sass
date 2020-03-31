@@ -33,6 +33,8 @@ body
 	margin-bottom: 1.75rem
 .f-500
 	font-weight: 500
+.fz-18
+	font-size: 18px
 .upp
 	text-transform: uppercase
 .tc
@@ -47,6 +49,17 @@ button, button:focus
 	font-family: 'Artegra', sans-serif
 	&.rounded-pill
 		padding: .5rem
+.btn-link
+	border-bottom: 1px solid $dark
+	text-decoration: none
+	&:hover
+		text-decoration: none
+		border-bottom: 1px solid transparent
+.btn-outline-dark:not(:disabled):not(.disabled).active
+	color: $dark
+	background-color: transparent
+	border-color: transparent
+	cursor: default
 .bg-full
 	background-repeat: no-repeat
 	background-size: cover
@@ -96,6 +109,9 @@ button, button:focus
 		transform: rotate3d(-1, 0, 0, 6deg)
 		transform-style: preserve-3d
 		border-radius: 2px
+.ss2
+	p
+		line-height: 2
 .s4
 	.btn
 		margin-top: 2rem
@@ -171,16 +187,23 @@ button, button:focus
 			top: 11px
 			left: 0
 			z-index: -1
+
 .s6
-	.col-lg-4
+	.iitt
 		padding-bottom: 2.5rem
 		background-size: contain
 		background-position: 50% 80%
 		background-repeat: no-repeat
 		transition: all 0.2s ease-in-out
 		&:hover
-			background-position: 50% 100%
-
+			background-position: 50% 105%
+.gall
+	.s6
+		.h1
+			padding-top: 3rem
+			padding-bottom: 0rem
+		.line
+			margin-bottom: 5rem
 .s8
 	.gall-next, .gall-prev
 		padding: 0 !important
@@ -240,6 +263,9 @@ header.active .navbar-light .navbar-toggler
 	filter: saturate(5) grayscale(1) invert(1)
 
 +media-breakpoint-up(xs)
+	.gall
+		header
+			background-color: #fff
 	.navbar-brand
 		img
 			height: 50px
@@ -402,6 +428,10 @@ header.active .navbar-light .navbar-toggler
 		font-size: 2.75rem
 		line-height: 1
 		font-family: 'Pala', serif
+	.gall
+		.h3
+			padding-top: 2rem
+			font-size: 3.45rem
 	.h1
 		font-size: 72px
 		padding-bottom: 6rem
@@ -422,6 +452,12 @@ header.active .navbar-light .navbar-toggler
 	.lead-plus
 		font-size: 1.75rem
 		font-weight: 500
+	.slider-logo
+		span
+			display: inline-block
+			vertical-align: middle
+			width: 260px
+			height: auto
 	.slider-inner
 		max-width: 1340px
 		margin: 0 auto
@@ -430,8 +466,16 @@ header.active .navbar-light .navbar-toggler
 			height: 437px
 			.col
 				height: 437px
-	.nav-link
-		font-size: 1.25rem
+	.navbar-light
+		.navbar-nav.nav-fill
+			padding-left: 1rem
+			padding-right: 1rem
+			.nav-item
+				
+			.nav-link
+				font-size: 1.25rem
+				padding-left: .75rem
+				padding-right: .75rem
 	.lead
 		font-size: 1.25rem
 	body
