@@ -446,3 +446,15 @@ $(document).on('click', '[data-href]', function(e) {
         scrollTop: goto.offset().top - 60
     }, 800)
 })
+
+
+$('a[data-toggle="tab"]').on('shown.bs.tab', function(e) {
+    //console.log()
+    //e.target // newly activated tab
+    //e.relatedTarget // previous active tab
+    var target = "#up"
+    var goto = $(target)
+    $('html, body').animate({
+        scrollTop: goto.offset().top + 100
+    }, 800)
+})

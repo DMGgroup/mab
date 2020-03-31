@@ -55,17 +55,25 @@ button, button:focus
 	&:hover
 		text-decoration: none
 		border-bottom: 1px solid transparent
-.btn-outline-dark:not(:disabled):not(.disabled).active
+.btn:not(:disabled):not(.disabled).active
 	color: $dark
 	background-color: transparent
 	border-color: transparent
 	cursor: default
+	box-shadow: none !important
+	outline: none !important
 .bg-full
 	background-repeat: no-repeat
 	background-size: cover
 .feather
 	stroke-width: 2
 	width: 12px
+
+.nav-tabs
+	border: none
+	.nav-link
+		border-radius: 0
+		width: 30%
 
 .big
 	stroke-width: 1
