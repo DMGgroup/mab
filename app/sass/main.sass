@@ -196,15 +196,15 @@ button, button:focus
 			left: 0
 			z-index: -1
 
-.s6
-	.iitt
-		padding-bottom: 2.5rem
-		background-size: contain
-		background-position: 50% 80%
-		background-repeat: no-repeat
-		transition: all 0.2s ease-in-out
-		&:hover
-			background-position: 50% 105%
+
+.iitt
+	padding-bottom: 2.5rem
+	background-size: 96%
+	background-position: 50% 100%
+	background-repeat: no-repeat
+	transition: all 0.2s ease-in-out
+	&:hover
+		background-position: 50% 96%
 .gall
 	.s6
 		.h1
@@ -248,6 +248,8 @@ button, button:focus
 	.news-prev
 		float: left
 		border-right: 1px solid $white
+	img
+		filter: saturate(5) grayscale(1) invert(1)
 .line
 	height: 1px
 	background-color: $dark
@@ -363,7 +365,7 @@ header.active .navbar-light .navbar-toggler
 		margin: 1rem 0
 +media-breakpoint-up(md)
 	.nav-tabs .nav-link
-		width: (100% / 3 - 60px)
+		width: calc((100% / 3) - 60px)
 	.h3
 		font-size: 1.75rem
 	.h1
@@ -500,5 +502,6 @@ header.active .navbar-light .navbar-toggler
 		.row
 			min-height: 400px
 			height: auto
-	.nav-tabs .nav-link
-		width: (100% / 3 - 60px)
+	.s6
+		.card-body
+			min-height: 315px
